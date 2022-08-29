@@ -1,16 +1,18 @@
-import {Entity,Column,PrimaryGeneratedColumn} from "typeorm";
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  PrimaryColumnCannotBeNullableError,
+} from "typeorm";
 
-@Entity('category')
+@Entity("category")
 export class Category {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
-    @PrimaryGeneratedColumn('uuid')
-    id: string
+  @Column()
+  category_name: string;
 
-    @Column()
-    category_name: string;
-
-    @Column()
-    type: string;
-
-    
+  @Column()
+  type: string;
 }

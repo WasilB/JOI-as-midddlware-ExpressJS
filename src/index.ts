@@ -6,6 +6,7 @@ import accountRouter from "./routes/account.type.route";
 import categoryRouter from "./routes/catagories.route";
 import operationRouter from "./routes/operation.type.route";
 import transactionRouter from "./routes/transaction.type.route";
+import chartAccountRouter from "./routes/chart.account.route";
 
 // create connection with database
 // note that it's not active database connection
@@ -23,6 +24,7 @@ app.use("/accounttype", accountRouter);
 app.use("/category", categoryRouter);
 app.use("/operationtype", operationRouter);
 app.use("/transactiontype", transactionRouter);
+app.use("/chartaccount", chartAccountRouter);
 
 // run app
 app.listen(3000);

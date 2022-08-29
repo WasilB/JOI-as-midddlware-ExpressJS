@@ -1,15 +1,10 @@
 {
   "name": "wasil",
   "version": "0.0.1",
-  "description": "",
-  "license": "",
-  "readmeFilename": "",
-  
+  "description": "Current repository is best example to how to use node js with typescript type orm and mysql\r ## clone the current repo\r ## npm install for node_modules\r ### install mysql driver too and change host,username and password in ormconfig.json\r ### npm start\r #### check restults http://localhost:3000/posts\r #### Maker sure user and posts table add there .sql files already in clone please check",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
-  },
-  "bugs": {
     "url": ""
   },
   "tags": [
@@ -29,13 +24,17 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "init": "^0.1.2",
     "joi": "^17.6.0",
     "mysql": "^2.15.0",
     "pg": "^8.7.3",
+    "postgres": "^3.2.4",
     "randomstring": "^1.2.2",
     "typeorm": "^0.2.45"
   },
   "scripts": {
     "start": "tsc && node dist/index.js"
-  }
+  },
+  "main": "index.js",
+  "author": ""
 }

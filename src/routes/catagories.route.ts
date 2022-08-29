@@ -6,7 +6,7 @@ const categoryRouter = express.Router();
 const categoriesController = new CategoriesController();
 
 categoryRouter.post(
-  "/crete",
+  "/create",
   categoriesValidator,
   categoriesController.createCategory
 );
